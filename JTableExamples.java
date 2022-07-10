@@ -1,10 +1,10 @@
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-public class JTableExamples {
+public class RestMenu {
 	JFrame f;
 	JTable j;
-	JTableExamples() {
+	RestMenu() {
 		f = new JFrame();
 		f.setTitle("Resturant Menu");
 		String[][] data = {
@@ -43,6 +43,6 @@ public class JTableExamples {
 		f.setVisible(true);
 	}
 	public static void main(String[] args) {
-		new JTableExamples();
+		new RestMenu();
 	}
 }
