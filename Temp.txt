@@ -1,0 +1,13 @@
+﻿   City           Time      Temperature
+     
+  Jaipur        10:53:00      33°C
+
+  Mumbai        10:53:00      29°C
+       
+  Moscow        07:29:00      13°C
+
+  Tokyo         13:37:00      22°C
+
+Newyork City    00:22:00      16°C
+
+  Sydney        04:03:00      20°C
