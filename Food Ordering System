@@ -1,0 +1,209 @@
+import javax.swing.*;  
+import java.awt.event.*;  
+public class Fos extends JFrame implements ActionListener {  
+    JLabel l;  
+    JCheckBox cb1,cb2,cb3,cb4,cb5,cb6,cb7,cb8,cb9,cb10,cb11,cb12,cb13,cb14,cb15,
+    cb16,cb17,cb18,cb19,cb20,cb21,cb22,cb23,cb24,cb25,cb26,cb27,cb28,cb29,cb30;  
+    JButton b;  
+    Fos() {  
+        l=new JLabel("Food Ordering System");  
+        l.setBounds(50,50,300,20);  
+        cb1=new JCheckBox("Chole Bhature (Indian) @ 100/-");  
+        cb1.setBounds(100,100,300,20);  
+        cb2=new JCheckBox("Pav Bhaji (Indian) @ 80/-");  
+        cb2.setBounds(100,150,300,20);  
+        cb3=new JCheckBox("North Indian Thali (Indian) @ 300/-");  
+        cb3.setBounds(100,200,300,20); 
+        cb4=new JCheckBox("South Indian Thali (Indian) @ 290/-");  
+        cb4.setBounds(100,100,300,20);  
+        cb5=new JCheckBox("Pasta (Italian) @ 80/-");  
+        cb5.setBounds(100,150,300,20);  
+        cb6=new JCheckBox("Pizza (Italian) @ 250/-");  
+        cb6.setBounds(100,200,300,20);  
+        cb7=new JCheckBox("Lasagne (Italian) @ 90/-");  
+        cb7.setBounds(100,100,300,20);  
+        cb8=new JCheckBox("Risotto (Italian) @ 70/-");  
+        cb8.setBounds(100,150,300,20);  
+        cb9=new JCheckBox("Burger (American) @ 60/-");  
+        cb9.setBounds(100,200,300,20);  
+        cb10=new JCheckBox("Hot Dogs (American) @ 90/-");  
+        cb10.setBounds(100,100,300,20);  
+        cb11=new JCheckBox("Pancakes (American) @ 100/-");  
+        cb11.setBounds(100,150,300,20);  
+        cb12=new JCheckBox("Bagel (American) @ 50/-");  
+        cb12.setBounds(100,200,300,20);  
+        cb13=new JCheckBox("Momos (Chinese) @ 65/-");  
+        cb13.setBounds(100,100,300,20);  
+        cb14=new JCheckBox("Mamchurian (Chinese) @ 80/-");  
+        cb14.setBounds(100,150,300,20);  
+        cb15=new JCheckBox("Chowmien (Chinese) @ 75/-");  
+        cb15.setBounds(100,200,300,20);   
+        cb16=new JCheckBox("Spring Rolls (Chinese) @ 60/-");  
+        cb16.setBounds(100,100,300,20);  
+        cb17=new JCheckBox("Noodles (Japanese) @ 55/-");  
+        cb17.setBounds(100,150,300,20);  
+        cb18=new JCheckBox("Sushi (Japanese) @ 150/-");  
+        cb18.setBounds(100,200,300,20);  
+        cb19=new JCheckBox("Miso soup (Japanese) @ 90/-");  
+        cb19.setBounds(100,100,300,20);  
+        cb20=new JCheckBox("Ramen (Japanese) @ 65/-");  
+        cb20.setBounds(100,150,300,20);  
+        cb21=new JCheckBox("Gulaab-Jaamun (Dessert) @ 80/-");  
+        cb21.setBounds(100,200,300,20);  
+        cb22=new JCheckBox("Mochi (Dessert) @ 50/-");  
+        cb22.setBounds(100,150,300,20);
+        cb23=new JCheckBox("Red Bean Bun (Dessert) @ 69/-");  
+        cb23.setBounds(100,150,300,20);
+        cb24=new JCheckBox("Cheesecake (Dessert) @ 99/-");  
+        cb24.setBounds(100,150,300,20);
+        cb25=new JCheckBox("Gelato Ice-cream (Dessert) @ 89/-");  
+        cb25.setBounds(100,150,300,20);
+        cb26=new JCheckBox("Tea (Beverages) @ 30/-");  
+        cb26.setBounds(100,150,300,20);
+        cb27=new JCheckBox("Hot Coffee (Beverages) @ 50/-");  
+        cb27.setBounds(100,150,300,20);
+        cb28=new JCheckBox("Oreo Shake (Beverages) @ 120/-");  
+        cb28.setBounds(100,150,300,20);
+        cb29=new JCheckBox("Cold Coffee (Beverages) @ 90/-");  
+        cb29.setBounds(100,150,300,20);
+        cb30=new JCheckBox("Mojito (Beverages) @ 60/-");  
+        cb30.setBounds(100,150,300,20);
+        b=new JButton("Order");  
+        b.setBounds(100,300,200,30);  
+        b.addActionListener(this);  
+        add(l);add(cb1);add(cb2);add(cb3);add(cb4);add(cb5);add(cb6);add(cb7);add(cb8);add(cb9);add(cb10);add(cb11);add(cb12);add(cb13);add(cb14);add(cb15);add(cb16);add(cb17);add(cb18);add(cb19);add(cb20);add(cb21);add(cb22);add(cb23);add(cb24);add(cb25);add(cb26);add(cb27);add(cb28);add(cb29);add(cb30);add(b);  
+        setSize(800,400);  
+        setLayout(null);  
+        setVisible(true);  
+        setDefaultCloseOperation(EXIT_ON_CLOSE);  
+    }  
+    public void actionPerformed(ActionEvent e) {  
+        float amount=0;  
+        String msg="";  
+        if (cb1.isSelected()) {  
+            amount+=100;  
+            msg="Chole Bhature (Indian): 100/-\n";  
+        }  
+        if (cb2.isSelected()) {  
+            amount+=80;  
+            msg+="Pav Bhaji (Indian): 80/-\n";  
+        }  
+        if (cb3.isSelected()) {  
+            amount+=300;  
+            msg+="North Indian Thali (Indian): 300/-\n";  
+        }
+        if (cb4.isSelected()) {  
+            amount+=290;  
+            msg="South Indian Thali (Indian): 290/-\n";  
+        }  
+        if (cb5.isSelected()) {  
+            amount+=80;  
+            msg+="Pasta (Italian): 80/-\n";  
+        }  
+        if (cb6.isSelected()) {  
+            amount+=250;  
+            msg+="Pizza (Italian): 250/-\n";  
+        }
+        if (cb7.isSelected()) {  
+            amount+=90;  
+            msg="Lasagne (Italian): 90/-\n";  
+        }  
+        if (cb8.isSelected()) {  
+            amount+=70;  
+            msg+="Risotto (Italian): 70/-\n";  
+        }  
+        if (cb9.isSelected()) {  
+            amount+=60;  
+            msg+="Burger (American): 60/-\n";  
+        }
+        if (cb10.isSelected()) {  
+            amount+=90;  
+            msg="Hot Dogs (American): 90/-\n";  
+        }  
+        if (cb11.isSelected()) {  
+            amount+=100;  
+            msg+="Pancakes (American): 100/-\n";  
+        }  
+        if (cb12.isSelected()) {  
+            amount+=50;  
+            msg+="Bagel (American): 50/-\n";  
+        } 
+        if (cb13.isSelected()) {  
+            amount+=65;  
+            msg+="Momos (Chinese): 65/-\n";  
+        }
+        if (cb14.isSelected()) {  
+            amount+=80;  
+            msg="Mamchurian (Chinese): 80/-\n";  
+        }  
+        if (cb15.isSelected()) {  
+            amount+=75;  
+            msg+="Chowmien (Chinese): 75/-\n";  
+        }  
+        if (cb16.isSelected()) {  
+            amount+=60;  
+            msg+="Spring Rolls (Chinese): 60/-\n";  
+        }
+        if (cb17.isSelected()) {  
+            amount+=55;  
+            msg+="Noodles (Japanese): 55/-\n";  
+        } 
+        if (cb18.isSelected()) {  
+            amount+=150;  
+            msg+="Sushi (Japanese): 150/-\n";  
+        }
+        if (cb19.isSelected()) {  
+            amount+=90;  
+            msg="Miso soup (Japanese): 90/-\n";  
+        }  
+        if (cb20.isSelected()) {  
+            amount+=65;  
+            msg+="Ramen (Japanese): 65/-\n";  
+        }  
+        if (cb21.isSelected()) {  
+            amount+=80;  
+            msg+="Gulaab Jaamun (Dessert): 80/-\n";  
+        } 
+        if (cb22.isSelected()) {  
+            amount+=49;  
+            msg="Mochi (Dessert): 49/-\n";  
+        }  
+        if (cb23.isSelected()) {  
+            amount+=69;  
+            msg+="Red Bean Bun (Dessert): 69/-\n";  
+        }  
+        if (cb24.isSelected()) {  
+            amount+=99;  
+            msg+="Cheesecake (Dessert): 99/-\n";  
+        }
+        if (cb25.isSelected()) {  
+            amount+=89;  
+            msg="Gelato Ice Cream (Dessert): 89/-\n";      
+        }  
+        if (cb26.isSelected()) {  
+            amount+=29;  
+            msg+="Tea (Beverage): 29/-\n";      
+        }  
+        if (cb27.isSelected()) {  
+            amount+=49;  
+            msg+="Hot Coffee (Beverage): 49/-\n";    
+        } 
+        if (cb28.isSelected()) {  
+            amount+=119;  
+            msg="Oreo Shake (Beverage): 119/-\n";              
+        }  
+        if (cb29.isSelected()) {  
+            amount+=89;  
+            msg+="Cold Coffee (Beverage): 89/-\n";      
+        }  
+        if (cb30.isSelected()) {  
+            amount+=59;  
+            msg+="Mojito (Beverage): 59/-\n";  
+        } 
+        msg+="-----------------\n";  
+        JOptionPane.showMessageDialog(this,msg+"Total(+GST): "+(amount+((18*amount)/100)));  
+    }  
+    public static void main(String[] args) {  
+        new Fos();  
+    }  
+}
